@@ -37,6 +37,15 @@ class S {
       args: [],
     );
   }
+
+  String youHavePushedTheButtonTimesFormat(dynamic count) {
+    return Intl.message(
+      'You have pushed the button $count times',
+      name: 'youHavePushedTheButtonTimesFormat',
+      desc: '',
+      args: [count],
+    );
+  }
 }
 
 class AppLocalizationDelegate extends LocalizationsDelegate<S> {

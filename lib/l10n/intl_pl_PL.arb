@@ -1,3 +1,4 @@
 {
-  "helloWorld": "Witaj swiecie!"
+  "helloWorld": "Witaj swiecie!",
+  "youHavePushedTheButtonCountManyTimesFormat": "Nacisnales przycisk {count} razy"
 }
