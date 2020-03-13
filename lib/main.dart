@@ -31,7 +31,7 @@ class _MainPageState extends State<MainPage> {
         title: Text(S.of(context).helloWorld),
       ),
       body: Center(
-        child: Text(S.of(context).youHavePushedTheButtonTimesFormat(_count)),
+        child: Text(S.of(context).clickButtonCounterFormat(_count)),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () => setState(() => _count++),

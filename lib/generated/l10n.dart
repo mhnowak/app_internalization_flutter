@@ -38,10 +38,12 @@ class S {
     );
   }
 
-  String youHavePushedTheButtonTimesFormat(dynamic count) {
-    return Intl.message(
-      'You have pushed the button $count times',
-      name: 'youHavePushedTheButtonTimesFormat',
+  String clickButtonCounterFormat(dynamic count) {
+    return Intl.plural(
+      count,
+      one: 'You have pushed the button 1 time',
+      other: 'You have pushed the button $count times',
+      name: 'clickButtonCounterFormat',
       desc: '',
       args: [count],
     );

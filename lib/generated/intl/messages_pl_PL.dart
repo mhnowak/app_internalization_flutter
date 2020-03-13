@@ -19,8 +19,11 @@ typedef String MessageIfAbsent(String messageStr, List<dynamic> args);
 class MessageLookup extends MessageLookupByLibrary {
   String get localeName => 'pl_PL';
 
+  static m0(count) => "${Intl.plural(count, one: 'Nacisnales przycisk 1 raz', other: 'Nacisnales przycisk ${count} razy')}";
+
   final messages = _notInlinedMessages(_notInlinedMessages);
   static _notInlinedMessages(_) => <String, Function> {
+    "clickButtonCounterFormat" : m0,
     "helloWorld" : MessageLookupByLibrary.simpleMessage("Witaj swiecie!")
   };
 }
