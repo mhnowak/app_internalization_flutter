@@ -1,0 +1,4 @@
+{
+  "helloWorld": "Witaj swiecie!",
+  "clickButtonCounterFormat": "{count, plural, one{Nacisnales przycisk 1 raz} other{Nacisnales przycisk {count} razy}}"
+}
